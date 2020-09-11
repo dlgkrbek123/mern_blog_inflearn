@@ -32,3 +32,10 @@ npm install morgan nodemon -D
 프론트 서버를 따로 두지 않고
 백엔드에서 정적 파일로 제공하자
 
+--------------------------------------------------
+
+mongodb atlas 클러스터 생성
+
+network access로 ip 추가
+connect로 접속 방법을 설정 => your application
+
