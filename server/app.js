@@ -1,8 +1,10 @@
+import config from './config';
 import express from 'express';
 import mongoose from 'mongoose';
-import config from './config';
 import hpp from 'hpp';
 import helmet from 'helmet';
+import cors from 'cors';
+import morgan from 'morgan';
 
 const { MONGO_URI } = config;
 
