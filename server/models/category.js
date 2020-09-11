@@ -1,0 +1,18 @@
+import mongoose, { mongo } from 'mongoose';
+
+const CategorySchema = new mongoose.Schema({
+  categoryName: {
+    type: String,
+    default: '미분류',
+  },
+  posts: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'post',
+    },
+  ],
+});
+
+const Category = mongoose.model('category', CategorySchema); // 스키마를 user로 접근
+
+export default Category;
