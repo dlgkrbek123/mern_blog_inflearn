@@ -9,6 +9,7 @@ import morgan from 'morgan';
 // Routes
 import postsRoutes from './routes/api/post';
 import userRoutes from './routes/api/user';
+import authRoutes from './routes/api/auth';
 
 const { MONGO_URI } = config;
 
@@ -39,5 +40,6 @@ app.use(express.json());
 
 app.use('/api/post', postsRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
 
 export default app;

@@ -43,3 +43,11 @@ connect로 접속 방법을 설정 => your application
 --------------------------------------------------
 
 npm install bcryptjs jsonwebtoken
+
+재로그인시 토큰 값이 달라진다.
+
+--------------------------------------------------
+
+npx 설치여부 보고 라이브러리를 다운함
+
+npm install redux react-redux redux-saga react-router-dom connected-react-router bootstrap reactstrap dotenv
