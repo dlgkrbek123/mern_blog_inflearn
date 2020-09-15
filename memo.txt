@@ -51,3 +51,5 @@ npm install bcryptjs jsonwebtoken
 npx 설치여부 보고 라이브러리를 다운함
 
 npm install redux react-redux redux-saga react-router-dom connected-react-router bootstrap reactstrap dotenv
+
+npm install node-sass sass-loader
