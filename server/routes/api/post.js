@@ -12,8 +12,18 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res, next) => {
   try {
     console.log(req, 'req');
-    // const
+    const { title, contents, fileUrl, creator } = req.body;
+
+    const newPost = await Post.create({
+      title,
+      contents,
+      fileUrl,
+      creator,
+    });
+    res.json(newPost);
   } catch (e) {
     console.log(e);
   }
 });
+
+export default router;

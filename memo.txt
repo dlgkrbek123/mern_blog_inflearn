@@ -39,3 +39,7 @@ mongodb atlas 클러스터 생성
 network access로 ip 추가
 connect로 접속 방법을 설정 => your application
 
+
+--------------------------------------------------
+
+npm install bcryptjs jsonwebtoken

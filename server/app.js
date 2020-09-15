@@ -6,12 +6,17 @@ import helmet from 'helmet';
 import cors from 'cors';
 import morgan from 'morgan';
 
+// Routes
+import postsRoutes from './routes/api/post';
+import userRoutes from './routes/api/user';
+
 const { MONGO_URI } = config;
 
 mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
   .then(() => console.log('MongoDB connecting Success'))
   .catch((e) => {
@@ -30,12 +35,9 @@ app.use(
   })
 );
 app.use(morgan('dev'));
-
 app.use(express.json());
 
-// Use routes
-app.get('/', (req, res) => {
-  res.send('엄준식');
-});
+app.use('/api/post', postsRoutes);
+app.use('/api/user', userRoutes);
 
 export default app;
