@@ -60,6 +60,23 @@ function* watchLogout() {
   yield takeEvery(LOGOUT_REQUEST, logout);
 }
 
+// function* logout() {
+//     try {
+//       yield put({
+//         type: LOGOUT_SUCCESS,
+//       });
+//     } catch (e) {
+//       console.log(e);
+//       yield put({
+//         type: LOGOUT_FAILURE,
+//       });
+//     }
+//   }
+
+//   function* watchLogout() {
+//     yield takeEvery(LOGOUT_REQUEST, logout);
+//   }
+
 export default function* authSaga() {
   yield all([fork(watchLoginUser), fork(watchLogout)]);
 }
