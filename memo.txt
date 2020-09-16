@@ -73,3 +73,9 @@ plugin : 자원에 처리를 해주는 모듈
 
 npm run eject
 yarn add @babel/plugin-transform-react-jsx @babel/plugin-transform-react-jsx-self
+플러그인 설치
+
+ckeditor 유료였네 ㅎㄷㄷ
+
+--------------------------------------------------
+
