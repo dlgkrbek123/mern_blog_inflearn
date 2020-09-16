@@ -8,13 +8,12 @@ import {
 } from '../types';
 
 const postLoadingAPI = () => {
-  return axios.post('api/post');
+  return axios.get('api/post');
 };
 
-function* postLoading(action) {
+function* postLoading() {
   try {
     const result = yield call(postLoadingAPI);
-    console.log(result);
     yield put({
       type: POST_LOADING_SUCCESS,
       payload: result.data,

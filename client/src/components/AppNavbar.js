@@ -21,7 +21,6 @@ const AppNavBar = () => {
     (state) => state.auth
   );
   const dispatch = useDispatch();
-  console.log(isAuthenticated, user, userRole);
 
   const onLogout = useCallback(() => {
     dispatch({

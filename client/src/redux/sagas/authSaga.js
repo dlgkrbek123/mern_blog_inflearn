@@ -19,7 +19,6 @@ import {
 } from '../types';
 
 const loginUserAPI = (loginData) => {
-  console.log(loginData, 'loginData');
   const config = {
     headers: {
       'Content-Type': 'application/json',
@@ -129,7 +128,6 @@ const userLoadingAPI = (token) => {
 function* userLoading(action) {
   try {
     const result = yield call(userLoadingAPI, action.payload);
-    console.log(result);
 
     yield put({
       type: USER_LOADING_SUCCESS,
