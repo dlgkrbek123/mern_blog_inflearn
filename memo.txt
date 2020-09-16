@@ -72,4 +72,4 @@ plugin : 자원에 처리를 해주는 모듈
 
 
 npm run eject
-npx create-react-app ckeditor5-react-example && cd ckeditor5-react-example
+yarn add @babel/plugin-transform-react-jsx @babel/plugin-transform-react-jsx-self
