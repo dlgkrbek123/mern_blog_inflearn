@@ -81,7 +81,7 @@ const AppNavBar = () => {
     </>
   );
 
-  const GuestLink = (
+  const guestLink = (
     <>
       <NavItem>
         <RegisterModal />
@@ -102,7 +102,7 @@ const AppNavBar = () => {
           <NavbarToggler onClick={handleToggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto d-flex justify-content-around" navbar>
-              {isAuthenticated ? authLink : GuestLink}
+              {isAuthenticated ? authLink : guestLink}
             </Nav>
           </Collapse>
         </Container>
