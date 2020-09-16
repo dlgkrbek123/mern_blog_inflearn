@@ -60,7 +60,16 @@ npm install node-sass sass-loader
 cra는 eject해야 웹팩설정 수정가능
 eject이후에 돌아갈 수 없음
 
+
+웹팩은 모든 자원을 하나의 번들파일로 합침
+spa는 번들러가 필요하다.
+
+output : 번들 결과물의 위치
+loader : 서로 다른 자원을 읽어들임
+plugin : 자원에 처리를 해주는 모듈
+
+
+
+
 npm run eject
-
-
 npx create-react-app ckeditor5-react-example && cd ckeditor5-react-example
